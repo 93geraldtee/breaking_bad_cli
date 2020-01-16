@@ -1,0 +1,7 @@
+# shebang tells the interpreter which language you're running in
+
+#!/usr/bin/env ruby                
+
+require_relative '../lib/environment'
+
+CLI.new.start
