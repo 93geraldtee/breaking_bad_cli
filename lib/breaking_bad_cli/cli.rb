@@ -65,9 +65,29 @@ class BreakingBad::CLI
         end
     end
 
-    def bye #this method exits thegem
+    def continue 
+        puts "To select another character, type 'y'"
+        puts "         To go to main menu, type 'm'"
+        puts "        To quit the program, type 'exit'"
+        input = gets.strip
+
+        if input == "y"
+            list_characters
+            sub_menu
+        elsif input == "m"
+            main_menu
+        elsif input == 'exit'
+            bye
+            sub_menu
+        else
+            invalid_option_2
+            continue
+        end 
+    end
+
+    def bye #this method exits the gem
         puts "Thanks for using this gem!"
-        puts '         "Tread lightly. - Heisenberg" '
+        puts '         "Tread lightly." - Heisenberg '
         exit
     end
 
@@ -107,23 +127,4 @@ class BreakingBad::CLI
         puts ""
     end
 
-    def continue 
-        puts "To select another character, type 'y'"
-        puts "         To go to main menu, type 'm'"
-        puts "        To quit the program, type 'exit'"
-        input = gets.strip
-
-        if input == "y"
-            list_characters
-            sub_menu
-        elsif input == "m"
-            main_menu
-        elsif input == 'exit'
-            bye
-            sub_menu
-        else
-            invalid_option_2
-            continue
-        end 
-    end
 end

@@ -4,19 +4,15 @@ This CLI gem connects to an external data source (https://breakingbadapi.com/api
 
 ## Installation
 
-Add this line to your application's Gemfile:
+This gem is not published, so this will have to be cloned to your machine. In your terminal type:
 
-```ruby
-gem 'breaking_bad_cli'
-```
+    $ git clone git@github.com:93geraldtee/breaking_bad_cli.git
 
-And then execute:
+You should 'cd' into the file 'breaking_bad_cli' and type:
 
-    $ bundle
+    $ ruby bin/run
 
-Or install it yourself as:
-
-    $ gem install breaking_bad_cli
+If it works, the gem should open in your terminal and then follow the command prompts!
 
 ## Usage
 

@@ -18,6 +18,4 @@ class BreakingBad::Character
         @@all
     end
 
-    # binding.pry
-
 end

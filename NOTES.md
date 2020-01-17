@@ -10,4 +10,3 @@ Overview of Project
     - gives option of choosing a character
     - if a character is chosen, puts out more detail of that character
     * doesn't break if user input is invalid
-    * 
