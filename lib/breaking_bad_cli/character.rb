@@ -3,8 +3,10 @@ class BreakingBad::Character
 
     @@all = []
 
-    def initialize(attributes)
-        attributes.each { |key, value| self.send("#{key}=", value) if self.respond_to?("#{key}=") }
+    def initialize(attributes_hash)
+        attributes_hash.each do |key, value| 
+            self.send("#{key}=", value) if self.respond_to?("#{key}=")
+        end
         self.save
     end
 
@@ -15,5 +17,7 @@ class BreakingBad::Character
     def self.all
         @@all
     end
+
+    # binding.pry
 
 end
