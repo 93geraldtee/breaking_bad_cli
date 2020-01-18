@@ -26,7 +26,7 @@ class BreakingBad::CLI
         input = gets.strip
 
         if input.downcase == "y" #shows list of characters from API and a sub menu
-            list_characters
+            list
             sub_menu # goes one level deep
         elsif input.downcase == "exit" #exits program if user types 'exit'
             bye
@@ -66,13 +66,13 @@ class BreakingBad::CLI
     end
 
     def continue 
-        puts "To select another character, type 'y'"
-        puts "         To go to main menu, type 'm'"
-        puts "        To quit the program, type 'exit'"
+        puts "Type 'y' to select another character"
+        puts "Type 'm' to go to main menu"
+        puts "Type 'exit' to quit the program"
         input = gets.strip
 
         if input == "y"
-            list_characters
+            list
             sub_menu
         elsif input == "m"
             main_menu
@@ -107,12 +107,18 @@ class BreakingBad::CLI
 
     #iterates through .all characters array from character.rb file, and lists
     #the character's index number and name to the terminal
-    def list_characters 
+    # def list_characters 
+    #     puts ""
+    #     BreakingBad::Character.all.each.with_index(1) do |character, i|
+    #         puts "#{i}. #{character.name}"
+    #     end
+    #     puts ""
+    # end
+
+    # OR
+    def list
         puts ""
-        BreakingBad::Character.all.each.with_index(1) do |character, i|
-            puts "#{i}. #{character.name}"
-        end
-        puts ""
+        BreakingBad::Character.print_all
     end
 
     #calls all character instance methods that read and write their descriptions (from attr_accessor)
@@ -126,5 +132,4 @@ class BreakingBad::CLI
         puts " Image URL: #{character.img}"
         puts ""
     end
-
 end

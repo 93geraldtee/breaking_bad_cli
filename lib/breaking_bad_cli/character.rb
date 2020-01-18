@@ -6,18 +6,24 @@ class BreakingBad::Character
     @@all = []
 
     def initialize(attributes_hash) 
-        attributes_hash.each do |key, value| 
-            self.send("#{key}=", value) if self.respond_to?("#{key}=")
-        end
+        attributes_hash.each do |attribute, value| # iterate through each hash with each
+            # sets the attribute in ap as the attribute in character class, and equal to the value in api checks if it responds to that attribute
+            self.send("#{attribute}=", value) if self.respond_to?("#{attribute}=") 
+            end
         self.save
     end
 
-    def save
-        @@all << self
+    def save #saves all instances of character into the @@all (class variable) array
+        @@all.push(self)
     end
 
-    def self.all
+    def self.all #returns an array of all the character instances
         @@all
     end
 
+    def self.print_all #prints numbered list of all characters
+        all.each_with_index do |character, index|
+            puts "#{index + 1}. #{character.name}"
+        end
+    end
 end

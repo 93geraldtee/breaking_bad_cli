@@ -1,5 +1,4 @@
-# environment file that requires all of the classes we build inside 
-# the ./lib/breaking_bad_cli folder
+# environment file that requires all of the classes we build inside the ./lib/breaking_bad_cli folder
 
 require 'rest-client'
 require 'json'
