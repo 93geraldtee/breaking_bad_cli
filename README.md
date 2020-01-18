@@ -1,6 +1,6 @@
 # BreakingBadCli
 
-This CLI gem connects to an external data source (https://breakingbadapi.com/api), lists all the characters from the series Breaking Bad and includes their descriptions.
+This CLI gem connects to an external data source (https://breakingbadapi.com/documentation), lists all the characters from the series Breaking Bad and includes their descriptions.
 
 ## Installation
 
@@ -8,17 +8,17 @@ This gem is not published, so this will have to be cloned to your machine. In yo
 
     $ git clone git@github.com:93geraldtee/breaking_bad_cli.git
 
-You should 'cd' into the file 'breaking_bad_cli' and type:
+Go to the folder where you cloned 'breaking_bad_cli'.
 
-    $ ruby bin/run
+Once you're in that folder, 'cd' into that file:
 
-If it works, the gem should open in your terminal and then follow the command prompts!
+    $ cd breaking_bad_cli
 
 ## Usage
 
-Type what's below into the terminal and follow the CLI prompts. 
+Type this in your terminal and follow the CLI prompts!
 
-    $ breaking_bad_cli
+    $ ruby bin/run
 
 ## Development
 
@@ -36,4 +36,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the BreakingBadCli project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/<github username>/breaking_bad_cli/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the BreakingBadCli project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/<93geraldtee>/breaking_bad_cli/blob/master/CODE_OF_CONDUCT.md).
