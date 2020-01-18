@@ -86,6 +86,7 @@ class BreakingBad::CLI
     end
 
     def bye #this method exits the gem
+        puts ""
         puts "Thanks for using this gem!"
         puts '         "Tread lightly." - Heisenberg '
         exit
