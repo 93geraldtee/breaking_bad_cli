@@ -7,10 +7,11 @@ class BreakingBad::Character
 
     def initialize(attributes_hash) 
         attributes_hash.each do |attribute, value| # iterate through each hash with each
-            # sets the attribute in ap as the attribute in character class, and equal to the value in api checks if it responds to that attribute
+            # sets the attribute in api as the attribute in character class, and equal to the value in api and if it responds to that attribute.
+            # .send calls the methods in attr_accessor and sets them as the key and equal to its value, and checks if that attribute is there
             self.send("#{attribute}=", value) if self.respond_to?("#{attribute}=") 
             end
-        self.save
+        self.save #saves the attribute and value in the @@all array
     end
 
     def save #saves all instances of character into the @@all (class variable) array
