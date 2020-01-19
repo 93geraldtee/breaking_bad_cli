@@ -10,7 +10,7 @@ This gem is not published, so this will have to be cloned to your machine. In yo
 
 Go to the folder where you cloned 'breaking_bad_cli'.
 
-Once you're in that folder, 'cd' into that file:
+Once you're in that folder, 'cd' into the project:
 
     $ cd breaking_bad_cli
 
