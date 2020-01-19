@@ -8,7 +8,8 @@ class BreakingBad::CLI
         puts "|                                                 |"
         puts " ------------------------------------------------- "
 
-        BreakingBad::API.new.all_characters #gathers data from API  
+        #gets data from API, instantiates each characters in the all_characters method in api.rb
+        BreakingBad::API.new.all_characters    
 
         main_menu
     end
