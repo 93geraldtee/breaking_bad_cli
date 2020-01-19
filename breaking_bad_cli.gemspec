@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{Write a short summary, because RubyGems requires one.}
   spec.description   = %q{Write a longer description or delete this line.}
   spec.license       = "MIT"
-  # spec.homepage      = "Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/93geraldtee/breaking_bad_cli"
 
   # spec.metadata["allowed_push_host"] = "Set to 'http://mygemserver.com'"
 
