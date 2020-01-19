@@ -13,6 +13,11 @@ Go to the folder where you cloned 'breaking_bad_cli'.
 Once you're in that folder, 'cd' into the project:
 
     $ cd breaking_bad_cli
+    
+To run the program, you'll need to install these gems. Type in your terminal:
+
+    $ gem install rest-client
+    $ gem install json
 
 ## Usage
 
