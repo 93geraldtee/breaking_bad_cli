@@ -3,8 +3,8 @@ class BreakingBad::CLI
         system('clear') #clears terminal
         puts " ------------------------------------------------- "
         puts "|                                                 |"
-        puts "|       "Yo, this is the Breaking Bad API!        |"
-        puts "|             Yeah, computers!" - Jesse           |"
+        puts '|       "Yo, this is the Breaking Bad API!"       |'
+        puts '|             "Yeah, computers!" - Jesse          |'
         puts "|                                                 |"
         puts " ------------------------------------------------- "
 
