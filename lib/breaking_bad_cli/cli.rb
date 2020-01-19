@@ -37,10 +37,10 @@ class BreakingBad::CLI
 
     def sub_menu #sub menu gives option to view more details of character
         puts ""
-        puts "Type the character's number to view more details"
+        puts "Type the character's number to view more details."
         puts ""
         puts "Type 'm' to go to main menu"
-        puts "Type 'exit' to exit the program,"
+        puts "Type 'exit' to exit the program"
         
         sub_menu_input
     end
