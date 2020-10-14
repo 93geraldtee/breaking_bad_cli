@@ -2,7 +2,7 @@
 
 require 'rest-client'
 require 'json'
-require 'pry'
+# require 'pry'
 
 require_relative "./breaking_bad_cli/version"
 require_relative './breaking_bad_cli/api'
